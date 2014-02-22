@@ -16,17 +16,16 @@ using Newtonsoft.Json;
 
 /* TODO:
  * 
+ * Validate the HRPG user id and HRPG api token through the HRPG api after loading from file.
  * Config file format is fragile, requires value be at correct rows, no blank lines.
  * Minimize to tray and run on schedule.
  * Schedule editor. 
  * Windows installer in order to locate the config file through the registry.
  * On first run after default config file is created, rtmprevsync is set to datetime.now.
- * Remove the line in the config file that enables "edit and continue" in the debugger.
+ * For release versions, remove the line in the config file that enables "edit and continue" in the debugger.
  * Send StatusUpdate()'s to a logfile?
  * Perform initial check for internet connectivity before anything else.
- * Write a readme.txt.
  * Create a "check for updates" feature.
- * Contact RTM and ask them to change the name from "API Application."
  * Add an interactive config to write HRPG auth values to .cfg?
  * Add error checking to all web requests.
  * Write a help screen.
@@ -64,6 +63,8 @@ namespace Hrpg_Rtm_Sync
 
             StatusUpdate("\nLoading settings...");
             LoadSettingsFromFile();
+
+            VerifyHrpgAuthValuesExist();
 
             // TODO: Should probably localize the time/date...
 
@@ -211,7 +212,7 @@ namespace Hrpg_Rtm_Sync
 
             return;
         }
-
+        
         public string GetNextSetting(StreamReader s)
         {
             // Purpose: Return the next non-comment line from hrpg-rtm-sync.cfg. Comment lines begin with "#".
@@ -224,6 +225,17 @@ namespace Hrpg_Rtm_Sync
             } while (Setting.StartsWith("#"));
 
             return Setting;
+        }
+
+        public void VerifyHrpgAuthValuesExist()
+        {
+            // Purpose: If either HrpgUserId=="" or HrpgApiToken=="" tell the user to edit the .cfg and exit.
+            
+            if(HrpgUserId.Trim() == "" || HrpgApiToken.Trim() == "")
+            {
+                MessageBox.Show("Please edit hrpg-rtm-sync.cfg and supply values for HRPG User ID and HRPG API Token before continuing.");
+                System.Environment.Exit(1);
+            }
         }
 
         public bool RtmAuthTokenIsValid()

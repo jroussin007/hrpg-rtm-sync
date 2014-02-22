@@ -1,6 +1,8 @@
 **Hrpg-Rtm Sync.**
 
-Released under the GNU GPLv3.0.
+Download the Windows 7 executable here: https://s3-us-west-2.amazonaws.com/hrpg-rtm-sync/v1.01/Hrpg-Rtm-Sync.exe
+
+Released under the GNU GPLv3.0 license.
 
 **Purpose:**
 
@@ -15,6 +17,8 @@ The program will create three HRPG habits: "Completed High Difficulty RTM Task,"
 To define the difficulty level of an RTM task, add the tag "#d1" for easy, "#d2" for medium, and "#d3" for difficult tasks to the task through RTM, the same way you would add any other tag. Hrpg-Rtm Sync will treat RTM tasks with no difficulty tag as "Easy" tasks.
 	
 Hrpg-Rtm Sync will record the date and time each time it is run, and will retrieve only the RTM tasks that have been marked as completed since the previous run.
+
+On the initial run, no RTM tasks will be synchronized. In order to synchronize RTM tasks completed to the first run on Hrpg-Rtm Sync, manually edit the file hrpg-rtm-sync.cfg and change the "RTM Previous Sync" value to the date of the earliest task to synchronize.
 
 **Operation:**
 
@@ -52,4 +56,10 @@ GNU GPLv3.0: https://www.gnu.org/licenses/gpl.html.
 	
 **Version History:**
 
-2/20/2014	v1.00	Initial public release.
+2/22/2014	v1.01
+	* Added check for blank HRPG User ID, blank HRPG API Token.
+	* Added text value to form1. (Oops).
+	* Updates to comments and docs.
+
+2/20/2014	v1.00
+	* Initial public release.

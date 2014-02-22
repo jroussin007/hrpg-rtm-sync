@@ -70,7 +70,7 @@
             this.Controls.Add(this.btnSync);
             this.Controls.Add(this.rtbStatus);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hrpg-Rtm Sync";
             this.ResumeLayout(false);
 
         }

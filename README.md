@@ -1,4 +1,4 @@
-***Hrpg-Rtm Sync.***
+**Hrpg-Rtm Sync.**
 
 Released under the GNU GPLv3.0.
 

@@ -25,10 +25,11 @@ In order to use Hrpg-Rtm Sync, complete the following steps:
 	
 1. Download and compile with C#. Hrpg-Rtm Sync was written using the VS2013 Pro IDE.
 	* Be sure to add a project reference to Json.Net.
-	* Install NewtonSoft Json.Net through NuGet.
-	* In VS Solution Explorer, right click "References."
-	* Select the "Extensions" tab.
-	* Select Json.Net
+		* To add a reference in VS2013:
+			* Install NewtonSoft Json.Net through NuGet.
+			* In VS Solution Explorer, right click "References."
+			* Select the "Extensions" tab.
+			* Select Json.Net
 
 2. Edit hrpg-rtm-sync.cfg
 	* Add your HRPG "User ID" and "API Token."

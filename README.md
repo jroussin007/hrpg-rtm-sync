@@ -10,14 +10,11 @@ Synchronize your completed Remember the Milk tasks with HabitRPG.
 
 Run Hrpg-Rtm Sync to synchronize all of the RTM tasks that you have marked as "complete" since the previous run of Hrpg-Rtm Sync.
 	
-The program will create three HRPG habits: "Completed High Difficulty RTM Task," "Completed Medium Difficulty RTM Task," and
-"Completed Low Difficulty RTM Task." Each time an RTM task is completed, the corresponding HRPG habit tracker will be incremented.
+The program will create three HRPG habits: "Completed High Difficulty RTM Task," "Completed Medium Difficulty RTM Task," and "Completed Low Difficulty RTM Task." Each time an RTM task is completed, the corresponding HRPG habit tracker will be incremented.
 	
-To define the difficulty level of an RTM task, add the tag "#d1" for easy, "#d2" for medium, and "#d3" for difficult tasks to the
-task through RTM, the same way you would add any other tag. Hrpg-Rtm Sync will treat RTM tasks with no difficulty tag as "Easy" tasks.
+To define the difficulty level of an RTM task, add the tag "#d1" for easy, "#d2" for medium, and "#d3" for difficult tasks to the task through RTM, the same way you would add any other tag. Hrpg-Rtm Sync will treat RTM tasks with no difficulty tag as "Easy" tasks.
 	
-Hrpg-Rtm Sync will record the date and time each time it is run, and will retrieve only the RTM tasks that have been marked as
-completed since the previous run.
+Hrpg-Rtm Sync will record the date and time each time it is run, and will retrieve only the RTM tasks that have been marked as completed since the previous run.
 
 **Operation:**
 
@@ -42,6 +39,12 @@ In order to use Hrpg-Rtm Sync, complete the following steps:
 Hrpg-Rtm Sync does not store or communicate any information about your RTM tasks or HRPG habits with anyone other than RTM and HRPG. It gets a list of your completed RTM tasks from the RTM API and looks for a "#d1" "#d2" or "#d3" tag in each, ignoring everything else, and increments the corresponding HRPG habits. That's it.
 	
 All communication with HRPG is by HTTPS. Most, but not all communication with RTM is by HTTPS.
+
+**Acknowledgements**
+
+* Lefnire and the rest of the HabitRPG team. https://github.com/HabitRPG.
+* The folks at RTM. http://www.rememberthemilk.com.
+* WizOneSolutions, who also offers a tool to synchronize HRPG and RTM, available here: https://github.com/wizonesolutions/habitrpg-todo-sync.
 
 **Licensing:**
 

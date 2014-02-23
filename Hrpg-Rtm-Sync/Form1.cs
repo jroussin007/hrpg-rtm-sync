@@ -16,6 +16,8 @@ using Newtonsoft.Json;
 
 /* TODO:
  * 
+ * Add a note in readme.md about how users can create a W7 cron job to synchronize automatically?
+ * Come up with an icon.
  * Validate the HRPG user id and HRPG api token through the HRPG api after loading from file.
  * Config file format is fragile, requires value be at correct rows, no blank lines.
  * Minimize to tray and run on schedule.

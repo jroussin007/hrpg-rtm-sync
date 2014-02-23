@@ -14,15 +14,27 @@ Run Hrpg-Rtm Sync to synchronize all of the RTM tasks that you have marked as "c
 	
 The program will create three HRPG habits: "Completed High Difficulty RTM Task," "Completed Medium Difficulty RTM Task," and "Completed Low Difficulty RTM Task." Each time an RTM task is completed, the corresponding HRPG habit tracker will be incremented.
 	
-To define the difficulty level of an RTM task, add the tag "#d1" for easy, "#d2" for medium, and "#d3" for difficult tasks to the task through RTM, the same way you would add any other tag. Hrpg-Rtm Sync will treat RTM tasks with no difficulty tag as "Easy" tasks.
+To define the difficulty level of an RTM task, add the tag "#d1" for easy, "#d2" for medium, and "#d3" for difficult tasks through the RTM interface, the same way you would add any other tag. Hrpg-Rtm Sync will treat RTM tasks with no difficulty tag as "Easy" tasks.
 	
 Hrpg-Rtm Sync will record the date and time each time it is run, and will retrieve only the RTM tasks that have been marked as completed since the previous run.
 
-On the initial run, no RTM tasks will be synchronized. In order to synchronize RTM tasks completed to the first run on Hrpg-Rtm Sync, manually edit the file hrpg-rtm-sync.cfg and change the "RTM Previous Sync" value to the date of the earliest task to synchronize.
+On the initial run, no RTM tasks will be synchronized. In order to synchronize RTM tasks completed prior to the first run on Hrpg-Rtm Sync, manually edit the file hrpg-rtm-sync.cfg and change the "RTM Previous Sync" value to the date of the earliest task to synchronize.
 
 **Operation:**
 
-In order to use Hrpg-Rtm Sync, complete the following steps:
+1. Click the link at the top of this document in order to download the Windows 7 executable.
+
+2. Run the program. Click "Run" when Windows says "the publisher could not be verified."
+
+3. Click "Yes" when prompted to create the config file hrpg-rtm-sync.cfg.
+
+4. Edit hrpg-rtm-sync.cfg and supply your HRPG User ID and API Token. These values are available from HRPG. As of 2014-02-22, the values can be found by clicking on Options > Settings > API.
+
+5. Run the program again. For the initial run, no RTM tasks will be synchronized. Each successive time the program is run, all RTM tasks marked as "completed" since the prior run will be synced with HRPG.
+
+**Build:**
+
+In order to build Hrpg-Rtm Sync from the source files, complete the following steps:
 	
 1. Download and compile with C#. Hrpg-Rtm Sync was written using the VS2013 Pro IDE.
 	* Be sure to add a project reference to Json.Net.
@@ -32,11 +44,13 @@ In order to use Hrpg-Rtm Sync, complete the following steps:
 			* Select the "Extensions" tab.
 			* Select Json.Net
 
-2. Edit hrpg-rtm-sync.cfg
+2. Run the program. Click "yes" when prompted to create a config file.
+
+3. Edit hrpg-rtm-sync.cfg
 	* Add your HRPG "User ID" and "API Token."
 		* These values are available through the options menu at HabitRPG.
 
-3. Run the program and click "Sync."
+4. Run the program and click "Sync."
 
 **Privacy Info:**
 

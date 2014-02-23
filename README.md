@@ -64,6 +64,7 @@ GNU GPLv3.0: https://www.gnu.org/licenses/gpl.html.
 **Version History:**
 
 2/22/2014	v1.01
+
 	* Added check for blank HRPG User ID, blank HRPG API Token.
 	* Added text value to form1. (Oops).
 	* Updates to comments and docs.

@@ -40,10 +40,10 @@ If you want to build from the source files, be sure to add a reference to Newton
 
 This can be done in VS2013 Pro as follows:
 
-	* Install Newtonsoft Json.Net through NuGet.
-	* In VS Solution Explorer, right click "References."
-	* Select the "Extensions" tab.
-	* Select Json.Net
+* Install Newtonsoft Json.Net through NuGet.
+* In VS Solution Explorer, right click "References."
+* Select the "Extensions" tab.
+* Select Json.Net
 	
 **Privacy Info:**
 
@@ -65,9 +65,9 @@ GNU GPLv3.0: https://www.gnu.org/licenses/gpl.html.
 
 2/22/2014	v1.01
 
-	* Added check for blank HRPG User ID, blank HRPG API Token.
-	* Added text value to form1. (Oops).
-	* Updates to comments and docs.
+* Added check for blank HRPG User ID, blank HRPG API Token.
+* Added text value to form1. (Oops).
+* Updates to comments and docs.
 
 2/20/2014	v1.00
 	* Initial public release.

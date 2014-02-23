@@ -39,6 +39,7 @@ On the initial run, no RTM tasks will be synchronized. In order to synchronize R
 If you want to build from the source files, be sure to add a reference to Newtonsoft's Json.Net.
 
 This can be done in VS2013 Pro as follows:
+
 	* Install Newtonsoft Json.Net through NuGet.
 	* In VS Solution Explorer, right click "References."
 	* Select the "Extensions" tab.

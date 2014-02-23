@@ -36,24 +36,14 @@ On the initial run, no RTM tasks will be synchronized. In order to synchronize R
 
 **Build:**
 
-In order to build Hrpg-Rtm Sync from the source files, complete the following steps:
+If you want to build from the source files, be sure to add a reference to Newtonsoft's Json.Net.
+
+This can be done in VS2013 Pro as follows:
+	* Install Newtonsoft Json.Net through NuGet.
+	* In VS Solution Explorer, right click "References."
+	* Select the "Extensions" tab.
+	* Select Json.Net
 	
-1. Download and compile with C#. Hrpg-Rtm Sync was written using the VS2013 Pro IDE.
-	* Be sure to add a project reference to Json.Net.
-		* To add a reference in VS2013:
-			* Install NewtonSoft Json.Net through NuGet.
-			* In VS Solution Explorer, right click "References."
-			* Select the "Extensions" tab.
-			* Select Json.Net
-
-2. Run the program. Click "yes" when prompted to create a config file.
-
-3. Edit hrpg-rtm-sync.cfg
-	* Add your HRPG "User ID" and "API Token."
-		* These values are available through the options menu at HabitRPG.
-
-4. Run the program and click "Sync."
-
 **Privacy Info:**
 
 Hrpg-Rtm Sync does not store or communicate any information about your RTM tasks or HRPG habits with anyone other than RTM and HRPG. It gets a list of your completed RTM tasks from the RTM API and looks for a "#d1" "#d2" or "#d3" tag in each, ignoring everything else, and increments the corresponding HRPG habits. That's it.

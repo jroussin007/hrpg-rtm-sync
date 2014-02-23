@@ -70,4 +70,5 @@ GNU GPLv3.0: https://www.gnu.org/licenses/gpl.html.
 * Updates to comments and docs.
 
 2/20/2014	v1.00
-	* Initial public release.
+
+* Initial public release.

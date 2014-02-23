@@ -2,7 +2,7 @@
 
 Download the Windows 7 executable here:
 
-https://s3-us-west-2.amazonaws.com/hrpg-rtm-sync/v1.01/Hrpg-Rtm-Sync.exe
+https://s3-us-west-2.amazonaws.com/hrpg-rtm-sync/Current-Version/Hrpg-Rtm-Sync.exe
 
 Released under the GNU GPLv3.0 license.
 
